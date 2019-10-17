@@ -2,11 +2,37 @@
 //  main.swift
 //  Swif_Extensions
 //
-//  Created by Sandeep Jangra on 2019-10-17.
+//  Created by Karan on 2019-10-17.
 //  Copyright © 2019 Karan Kumar. All rights reserved.
 //
 
 import Foundation
 
-print("Hello, World!")
+extension Double
+{
+    var km: Double
+    {
+        return self / 1000.0
+    }
+    var m: Double
+    {
+        return self
+    }
+    var cm : Double
+    {
+        return self * 100
+    }
+    var mm : Double
+    {
+        return self * 1000
+    }
+    
+    
+}
+
+var meter = 1.0
+
+print(meter.km)
+print(meter.cm)
+print(meter.mm)
 
